@@ -5,8 +5,8 @@ This repository serves as a resource for Computer Science students and enthusias
 ### Implemented Data Structures
 
 - Array
-- Linked List
--Stack
+- Linked List (Single,Circular,Doubly)
+- Stack
 - Queue
 - Binary Search Tree
-- FinalProject
+
