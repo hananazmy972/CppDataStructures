@@ -200,7 +200,7 @@ void Stack::print()
     }
 
 int main(){
-Stack myStack; // Create an instance of the List class
+Stack myStack; 
 
   int choice;
   do {
