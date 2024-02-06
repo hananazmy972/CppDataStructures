@@ -204,7 +204,7 @@ Stack myStack;
 
   int choice;
   do {
-    cout << "\nChoose an operation on the linked list:\n";
+    cout << "\nChoose an operation on the Stack:\n";
     cout << "1. Push to the stack\n";
     cout << "2. pop from the stack\n";
     cout << "3. Count the elements in the stack\n";
