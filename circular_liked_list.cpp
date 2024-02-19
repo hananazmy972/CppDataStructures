@@ -209,6 +209,9 @@ class circularList{
     //count the number of nodes
      int circularList::CountNodes()
      {
+       if(isEmpty()) return 0;
+       else
+       {
         Node* temp = head;
         int count = 1;
          while(temp->next != head)
@@ -217,6 +220,7 @@ class circularList{
             temp = temp->next;
          }
          return count;
+       }
      }
 
      // reverse the linked list
