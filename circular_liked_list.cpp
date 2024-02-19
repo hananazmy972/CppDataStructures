@@ -49,6 +49,7 @@ class circularList{
  //check if the node is exist or not
     bool circularList::isFound(int key)
     {
+     if(isEmpty())  return false;
        
      bool res = false;
      Node* temp = head;
@@ -226,6 +227,7 @@ class circularList{
      // reverse the linked list
      void circularList::reverse()
      {
+        if(isEmpty())return;
          Node* curr = head ,*temp = curr->next , *prev = NULL;
          while(temp->next != NULL)
          {
@@ -244,6 +246,7 @@ class circularList{
             if(head == NULL)
         {
             cout<<"YOUR LIST IS EMPTY"<<endl;
+            return -1;
         }
         else
         {
@@ -268,6 +271,7 @@ class circularList{
             if(head == NULL)
         {
             cout<<"YOUR LIST IS EMPTY"<<endl;
+            return -1;
         }
         else
         {
@@ -368,10 +372,6 @@ class circularList{
             cout << "Invalid choice. Please try again.\n";
         }
     } while (choice != 0);
-
-
-
-
 
         return 0;
         }
