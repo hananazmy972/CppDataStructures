@@ -219,6 +219,7 @@ int DoublyLinkedList::countNodes(){
         if(head == NULL)
         {
             cout<<"YOUR LIST IS EMPTY"<<endl;
+            return 0;
         }
         else
         {
@@ -242,6 +243,7 @@ int DoublyLinkedList::countNodes(){
             if(head == NULL)
         {
             cout<<"YOUR LIST IS EMPTY"<<endl;
+            return 0;
         }
         else
         {
