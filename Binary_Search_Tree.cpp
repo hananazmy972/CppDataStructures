@@ -33,7 +33,22 @@ class BSTree{
 
 };
 
-// ......................................implementation.........................................................
+// ..................................................................Notes...............................................................
+
+    //   A Binary Search Tree (BST) is a hierarchical data structure where each node has at most two children, referred to as
+    //   the left child and the right child. The key in each node must be greater than or equal to any key stored in the left 
+    //   subtree and less than or equal to any key stored in the right subtree.
+
+    /*
+        Binary Search Tree (BST):
+                  4
+                /   \
+               2     6
+              / \   / \
+             1   3 5   7
+    */
+
+  // .................................................methods implementaions...............................................................
 BSTree::BSTree()
 {
    root = NULL;
