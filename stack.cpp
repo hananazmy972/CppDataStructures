@@ -172,9 +172,14 @@ void Stack::print()
   }
 
   int Stack::getMinimum()
-  {
-        int min = INT_MAX;
-      
+  { 
+        if(isEmpty())
+        {
+          cout<<"Your Stack is Empty"<<endl;
+          return 0;
+        }
+        else{
+        int min = INT_MAX;   
         for(int i = 0 ; i<= top ;i++)
         {
           if(min > numbers[i])
@@ -183,20 +188,29 @@ void Stack::print()
           }
         }
           return min;
+        }
       }
 
       int Stack::getMaximum()
- {
-      int max = INT_MIN;
-    
-      for(int i = 0 ; i<= top ;i++)
-      {
-        if(max < numbers[i])
+     {
+        if(isEmpty())
         {
-           max = numbers[i];
+          cout<<"Your Stack is Empty"<<endl;
+          return 0;
         }
-       }
-         return max;
+        else
+        {
+        int max = INT_MIN;
+      
+        for(int i = 0 ; i<= top ;i++)
+        {
+          if(max < numbers[i])
+          {
+            max = numbers[i];
+          }
+        }
+          return max;
+        }
     }
 
 int main(){
@@ -228,7 +242,7 @@ Stack myStack; // Create an instance of the stack
         break;
       }
       case 2:
-        myStack.pop();
+       myStack.pop();
         break;
       case 3:
         cout << "Number of elements: " << myStack.size() << endl;
