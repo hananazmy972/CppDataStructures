@@ -182,6 +182,12 @@ class List{
      //return the minimum  data in the list
     int List::getMinimum()
     {
+      if(isEmpty())
+      {
+        cout<<"Your List Is Empty"<<endl;
+        return 0;
+      }
+      else{
       int min = INT_MAX;
       Node* temp = head;
       while(temp != NULL)
@@ -193,10 +199,18 @@ class List{
           temp = temp->next; 
        }
          return min;
+      }
     }
     //return the Maximum  data in the list
     int List::getMaximum()
     {
+      if(isEmpty())
+      {
+        cout<<"Your List Is Empty"<<endl;
+        return 0;
+      }
+      else
+      {
       int max = INT_MIN;
       Node* temp = head;
       while(temp != NULL)
@@ -208,6 +222,7 @@ class List{
           temp = temp->next; 
        }
          return max;
+      }
     }
     
     //count odd data nodes
@@ -241,6 +256,12 @@ class List{
    //Switch the last node to the first node.
     void List::lastToFirst()
     {
+      if(isEmpty())
+      {
+        cout<<"Your List Is Empty"<<endl;
+      }
+      else
+      {
       Node* temp = head , *prev = NULL;
       while(temp->next != NULL){
         prev = temp ;
@@ -249,6 +270,7 @@ class List{
       prev->next = NULL ;
       temp->next = head;
       head = temp ;
+      }
     }
     
     //Modify the node number n by this value.
@@ -360,7 +382,6 @@ int main(){
         break;
       case 11:
         myList.lastToFirst();
-        cout << "Last node moved to the first.\n";
         break;
       case 12: {
         int n, value;
