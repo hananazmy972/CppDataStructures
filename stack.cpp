@@ -136,7 +136,7 @@ void Stack::print()
   }
   else
   {
-    for(int i = 0 ; i <= top ; i++)
+    for(int i = top ; i >= 0 ; i--)
     {
       cout<<numbers[i]<<" ";
     }
